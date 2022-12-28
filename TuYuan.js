@@ -1,4 +1,4 @@
-(function(window, document) {
+function(window, document) {
             if (top != self) {
                 window.top.location.replace(self.location.href);
             }
@@ -65,4 +65,4 @@
             bind(player, 'ended', function() {
                 if (auto) randomm();
             });
-        })(window, document);
+        }(window, document);
