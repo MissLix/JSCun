@@ -34,3 +34,4 @@ var items = [
 	'https://cdnjson.com/images/2022/12/28/220034.jpg',
 	'https://cdnjson.com/images/2022/12/28/220035.jpg',
 ];
+console.log(items);
