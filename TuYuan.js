@@ -55,7 +55,6 @@
 	'https://cdnjson.com/images/2022/12/28/220034.jpg',
 	'https://cdnjson.com/images/2022/12/28/220035.jpg',
 ];
-console.log(items);
 	//var item = items[Math.floor(Math.random()*items.length)];
 	//document.getElementById("player").src = item;
 	
@@ -67,4 +66,3 @@ console.log(items);
                 if (auto) randomm();
             });
         })(window, document);
-
