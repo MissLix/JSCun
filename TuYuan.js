@@ -1,24 +1,4 @@
-function(window, document) {
-            if (top != self) {
-                window.top.location.replace(self.location.href);
-            }
-            var get = function(id) {
-                return document.getElementById(id);
-            }
-            var bind = function(element, event, callback) {
-                return element.addEventListener(event, callback);
-            }
-            var auto = true;
-            var player = get('player');
-            var randomm = function() {
-				player.src =items[Math.floor(Math.random()*items.length)];
-                	player.play();
-            }
-	document.body.onkeydown = function(e) {
-	          if (e.keyCode==81) {
-	            	randomm();
-	            }
-	 }
+
 	var items = [
 	'https://cdnjson.com/images/2022/12/27/QQ20220428131753.png',
 	'https://cdnjson.com/images/2022/12/27/95335569_p1.jpg',
@@ -55,14 +35,3 @@ function(window, document) {
 	'https://cdnjson.com/images/2022/12/28/220034.jpg',
 	'https://cdnjson.com/images/2022/12/28/220035.jpg',
 ];
-	//var item = items[Math.floor(Math.random()*items.length)];
-	//document.getElementById("player").src = item;
-	
-            bind(get('next'), 'click', randomm);
-            bind(player, 'error', function() {
-                randomm();
-            });
-            bind(player, 'ended', function() {
-                if (auto) randomm();
-            });
-        }(window, document);
