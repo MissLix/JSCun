@@ -1,4 +1,3 @@
-
 	var items = [
 	'https://cdnjson.com/images/2022/12/27/QQ20220428131753.png',
 	'https://cdnjson.com/images/2022/12/27/95335569_p1.jpg',
